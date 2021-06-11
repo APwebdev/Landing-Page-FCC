@@ -1,0 +1,42 @@
+* {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(https://www.evans-furniture.net/cdn-cgi/image/w=1200,h=654,fit=contain,f=auto/css/1409/SlideShows/Home%20Page/19604-66-77-46-67-08-T681.jpg) center/cover no-repeat;
+    color: #FFF;
+    padding-bottom: 500px;
+}
+
+#header-img {
+    margin-left: 20px;
+    max-height: 40px;
+}
+
+#nav-bar {  
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background: #FFF;
+    opacity: 0.8;
+}
+
+#nav-bar, p {
+    color: black;
+
+}
