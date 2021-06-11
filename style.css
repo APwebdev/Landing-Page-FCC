@@ -14,10 +14,30 @@ body {
     padding: 0;
 }
 
+h1 {
+    font-size: 70px;
+    padding-top: 250px;
+    padding-left: 350px;
+    font-weight: 500;
+}
+
+h1:after {
+    content: '';
+    display: block;
+    border: 1px #FFA40D solid;
+    width: 250px;
+    margin-left: 90px;
+    margin-bottom: 20px;
+}
+
+input {
+    font-family: inherit;
+}
+
 #header {
     background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(https://www.evans-furniture.net/cdn-cgi/image/w=1200,h=654,fit=contain,f=auto/css/1409/SlideShows/Home%20Page/19604-66-77-46-67-08-T681.jpg) center/cover no-repeat;
     color: #FFF;
-    padding-bottom: 500px;
+    padding-bottom: 300px;
 }
 
 #header-img {
@@ -25,7 +45,7 @@ body {
     max-height: 40px;
 }
 
-#nav-bar {  
+#header-bar {  
     width: 100%;
     height: 50px;
     display: flex;
@@ -36,7 +56,81 @@ body {
     opacity: 0.8;
 }
 
-#nav-bar, p {
-    color: black;
+#newsletter {
+    width: 20%;
+    border-radius: 5px;
+    background: #ffffff;
+    position: absolute;
+    right: 350px;
+    top: 150px;
+    font-family: Poppins;
+    font-weight: 500;
+    padding: 50px 25px 25px 25px;
+}
 
+#title-newsletter {
+    text-align: center;
+
+}
+
+#title-newsletter, p {
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+#form {
+    color: #3b3b3b;
+}
+
+
+#quote {
+    font-size: 18px;
+    width: 32%;
+    text-align: center;
+    margin-top: 5px;
+    padding-left: 250px;
+}
+
+#submit {
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-top: 25px;
+    padding: 10px 5px;
+    font-size: 18px;
+    background: #FFA40D;
+    color: #FFF;
+    border-radius: 5px;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.nav-link {
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 25px;
+    color: #FFA40D;
+
+}
+
+.nav-link:hover {
+    color: rgb(128, 128, 128);
+}
+.secondary-color {
+    color: #FFA40D;
+}
+
+.form-class {
+    display: block;
+    margin-top: 10px;
+}
+
+.form-row {
+    display: block;
+    margin-top: 5px;
+    width: 90%;
+    border-radius: 5px;
+    padding: 5px 10px;
 }

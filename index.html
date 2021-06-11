@@ -7,19 +7,49 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">   
-    <title>Document</title>
+    <title>Home Styles | Highest Quality Furniture</title>
 </head>
 <body>
     <header id="header">
-        <div id="nav-bar">
+        <div id="header-bar">
             <a href="#top">
                 <img src="logo.png" id="header-img">
             </a>
-            <nav class="nav-link">
-                
+            <nav class="nav-bar" id="nav-bar">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
             </nav>
         </div>
-        <h1>Home Styles</h1>
+        <div id="title-quote">
+            <h1>HOME <span class="secondary-color">STYLES</span></h1>
+            <p id="quote">“The question of what <span class="secondary-color">you</span> want to own is actually the question of how you want to live <span class="secondary-color">your</span> life.”</p>
+        </div>
+        <div id="newsletter">
+            <form id="form">
+                <div id="title-newsletter">
+                    <h2>Subscribe to our <span class="secondary-color">Newsletter</span></h2>
+                    <p>All the news, and information will be sent to your email!</p>
+                </div>
+                <div id="input-label">
+                    <div class="form-class">
+                        <label id="name-label" for="name">First Name</label>
+                        <input type="text" name="name" id="name" class="form-row" placeholder="Enter your first name" required>
+                    </div>
+                    <div class="form-class">
+                        <label id="last-name-label" for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" class="form-row" placeholder="Enter your last name" required>
+                    </div>
+                    <div class="form-class">
+                        <label id="email" for="email">Email</label>
+                        <input type="email" name="email" id="email" class="form-row" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-class">
+                        <button type="submit" id="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </header>
     <div id="about">
         <div class="row">
