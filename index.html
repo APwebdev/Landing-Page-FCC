@@ -22,34 +22,52 @@
                 <a href="#collection" class="nav-link">Collection</a>
             </nav>
         </div>
-        <div id="title-quote">
-            <h1>HOME <span class="secondary-color">STYLES</span></h1>
-            <p id="quote">“The question of what <span class="secondary-color">you</span> want to own is actually the question of how you want to live <span class="secondary-color">your</span> life.”</p>
-        </div>
-        <div id="newsletter">
-            <form id="form">
-                <div id="title-newsletter">
-                    <h2 id="newsletterh2">Subscribe to our <span class="secondary-color">Newsletter</span></h2>
-                    <p>All the news, and information will be sent to your email</p>
-                </div>
-                <div id="input-label">
-                    <div class="form-class">
-                        <label id="name-label" for="name">First Name</label>
-                        <input type="text" name="name" id="name" class="form-row" placeholder="Enter your first name" required>
+        <div class="landing">
+            <div id="title-quote">
+                <h1>HOME <span class="secondary-color">STYLES</span></h1>
+                <p id="quote">“The question of what <span class="secondary-color">you</span> want to own is actually the question of how you want to live <span class="secondary-color">your</span> life.”</p>
+            </div>
+            <div id="newsletter">
+                <form action="https://www.freecodecamp.com/email-submit" id="form">
+                    <div id="title-newsletter">
+                        <h2 id="newsletterh2">Subscribe to our <span class="secondary-color">Newsletter</span></h2>
+                        <p>All the news, and information will be sent to your email</p>
                     </div>
-                    <div class="form-class">
-                        <label id="last-name-label" for="last-name">Last Name</label>
-                        <input type="text" name="last-name" id="last-name" class="form-row" placeholder="Enter your last name" required>
+                    <label id="name-label" for="name">First Name</label>
+                    <input type="text" name="name" id="name" class="form-row" placeholder="Enter your first name" required>
+
+                    <label id="last-name-label" for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="last-name" class="form-row" placeholder="Enter your last name" required>
+
+                    <label id="email" for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-row" placeholder="Enter your email" required>
+
+                    <button type="submit" id="submit">Submit</button>
+                </form>
+                <!-- <form action="https://www.freecodecamp.com/email-submit" id="form">
+                    <div id="title-newsletter">
+                        <h2 id="newsletterh2">Subscribe to our <span class="secondary-color">Newsletter</span></h2>
+                        <p>All the news, and information will be sent to your email</p>
                     </div>
-                    <div class="form-class">
-                        <label id="email" for="email">Email</label>
-                        <input type="email" name="email" id="email" class="form-row" placeholder="Enter your email" required>
+                    <div id="input-label">
+                        <div class="form-class">
+                            <label id="name-label" for="name">First Name</label>
+                            <input type="text" name="name" id="name" class="form-row" placeholder="Enter your first name" required>
+                        </div>
+                        <div class="form-class">
+                            <label id="last-name-label" for="last-name">Last Name</label>
+                            <input type="text" name="last-name" id="last-name" class="form-row" placeholder="Enter your last name" required>
+                        </div>
+                        <div class="form-class">
+                            <label id="email" for="email">Email</label>
+                            <input type="email" name="email" id="email" class="form-row" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-class">
+                            <button type="submit" id="submit">Submit</button>
+                        </div>
                     </div>
-                    <div class="form-class">
-                        <button type="submit" id="submit">Submit</button>
-                    </div>
-                </div>
-            </form>
+                </form> -->
+            </div>
         </div>
     </header>
     <div id="container">
@@ -80,7 +98,7 @@
                     </div>
                     <div class="description">
                         <h3 class="h3aboutus">Our Goal</h3>
-                        <p>The goal of "Home Styles" company is to produce high quality and various design furniture from various types of solid wood, maximally satisfying the customer's needs and quality. We can also offer flexible production, attractive price and ensure a competitive advantage.</p>
+                        <p>The goal of "Home Styles" company is to produce high quality and various design furniture from various types of solid wood, marble stones and diffrent types of fabrics, maximally satisfying the customer's needs and quality. We can also offer flexible production, attractive price and ensure a competitive advantage.</p>
                     </div>
                 </div>
             </div>
@@ -124,6 +142,11 @@
                 </div>
             </div>
         </section>
+        <footer id="footer">
+            <div class="copyright">
+                <p><span>&copy;</span> Copyright 2021, HOME STYLES</p>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

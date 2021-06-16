@@ -7,6 +7,7 @@
 html {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -17,18 +18,21 @@ body {
 
 h1 {
     font-size: 70px;
-    padding-top: 250px;
-    padding-left: 350px;
+    /* padding-top: 250px;
+    padding-left: 350px; */
     font-weight: 500;
+    text-align: center;
 }
 
 h1:after {
     content: '';
     display: block;
+    margin: auto;
     border: 1px #FFA40D solid;
     width: 250px;
-    margin-left: 90px;
+    /* margin-left: 90px; */
     margin-bottom: 20px;
+    text-align:center;
 }
 
 input {
@@ -38,7 +42,7 @@ input {
 #header {
     background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(https://www.evans-furniture.net/cdn-cgi/image/w=1200,h=654,fit=contain,f=auto/css/1409/SlideShows/Home%20Page/19604-66-77-46-67-08-T681.jpg) center/cover no-repeat;
     color: #FFF;
-    padding-bottom: 300px;
+    /* padding-bottom: 300px; */
 }
 
 #header-img {
@@ -57,17 +61,26 @@ input {
     opacity: 0.8;
 }
 
+.landing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    padding: 60px;
+}
+
 #newsletter {
-    width: 20%;
+    width: 50%;
     border-radius: 5px;
     background: #ffffff;
-    position: absolute;
-    right: 350px;
-    top: 150px;
+    /* position: absolute; */
+    /* right: 350px;
+    top: 150px; */
     font-family: Poppins;
     font-weight: 500;
-    padding: 50px 25px 25px 25px;
+    padding: 50px 25px 50px 25px;
 }
+
+/* grid-template-columns: auto; */
 
 #title-newsletter {
     text-align: center;
@@ -86,10 +99,10 @@ input {
 
 #quote {
     font-size: 18px;
-    width: 32%;
+    /* width: 32%; */
     text-align: center;
     margin-top: 5px;
-    padding-left: 250px;
+    /* padding-left: 250px; */
 }
 
 #submit {
@@ -144,6 +157,7 @@ input {
     margin-bottom: 25px;
     margin-top: 20px;
     color: #FFF;
+    transition: all 0.3s;
 }
 
 .bodyh2::after {
@@ -212,10 +226,127 @@ input {
     height: 250px;
     padding: 50px;
     color: #FFF;
-    font-weight: 500;
+    font-weight: 600;
+}
+
+.row img {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #000;
 }
 
 .col {
     height: 250px;
     text-align: center;
+}
+
+/* Footer */
+
+#footer {
+    margin-top: 100px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color:rgb(146, 146, 146);
+    color: #FFF;
+}
+
+/* Media Query */
+@media screen and (max-width: 995px) {
+    .landing {
+        grid-template-columns: 1fr;
+    }
+
+    #newsletter {
+        margin-top: 15px;
+        padding: 25px;
+        width: 40%;
+    }
+
+    .row img {
+        width: 40%;
+    }
+
+    .col {
+        height: 450px;
+    }
+
+    .about-us {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #newsletter {
+        width: 80%;
+    }
+
+
+    h1 {
+        line-height: 1em; 
+    }
+
+    .row {
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding: 0 10px;
+    }
+
+    .row img {
+        width: 75%;
+    }
+
+    .col {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #header-bar {
+        display: block;
+        padding: 25px 0px;
+    }
+
+    #header-img {
+        margin: auto;
+        display: block;
+    }
+
+    .nav-bar {
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(3, 1fr)
+    }
+
+    .nav-link {
+        margin: 0;
+    }
+
+    h1 {
+        padding-top: 45px;
+        font-size: 65px;
+        margin-bottom: 10px;
+    }
+
+    .landing {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #video {
+        width: 280px;
+    }
+
+    .row img {
+        width: 100%;
+    }
+
+    .col {
+        height: 300px;
+    }
 }
