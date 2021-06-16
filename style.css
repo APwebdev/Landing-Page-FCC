@@ -178,4 +178,44 @@ input {
 .description {
     margin-bottom: 50px;
     font-size: 28px;
+}   
+
+#video {
+    border: 0px;
+    margin-bottom: 50px;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.bodyh2:hover {
+    font-size: 35px;
+}
+
+#production {
+    background-color:rgb(146, 146, 146)
+}
+
+.rescaling {
+    width: 75%;
+    height: auto;
+}
+
+/* Grid */
+
+.row {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 250px;
+    padding: 50px;
+    color: #FFF;
+    font-weight: 500;
+}
+
+.col {
+    height: 250px;
+    text-align: center;
 }
